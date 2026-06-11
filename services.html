@@ -13,13 +13,13 @@
 
 <body class="bg-gradient-to-br from-pink-50 via-rose-50 to-amber-50 overflow-x-hidden">
     <!-- ==================== Navbar ==================== -->
-    <nav class="fixed top-0 left-0 w-full z-50">
+    <nav class="scroll-reveal fixed top-0 left-0 w-full z-50">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div
                 class="mt-4 flex items-center justify-between rounded-full border border-white/30 bg-white/70 backdrop-blur-xl px-6 py-4 shadow-lg">
 
                 <!-- Logo -->
-                <a href="#" class="flex items-center gap-3">
+                <a href="index.html" class="flex items-center gap-3">
                     <img src="media/beauty spot logo.png" alt="Spa Logo" class="w-auto h-14 object-contain" />
 
                     <span class=" text-xl font-semibold text-pink-700">
@@ -92,7 +92,7 @@
         <h1></h1>
     </div>
     <!-- Main Services Wrapper -->
-    <section class="bg-[#faf8f5] text-neutral-800 py-20 px-4 sm:px-6 lg:px-8 font-sans overflow-hidden">
+    <section class="scroll-reveal bg-[#faf8f5] text-neutral-800 py-20 px-4 sm:px-6 lg:px-8 font-sans overflow-hidden">
         <div class="max-w-7xl mx-auto relative">
 
             <!-- Elegant Geometric Background Accents (Animated Glow) -->
@@ -503,6 +503,63 @@
 
         </div>
     </footer>
+    <!-- Full-Page Preloader Overlay Container -->
+<div id="salon-preloader" class="fixed inset-0 z-[9999] bg-[#faf8f5] flex flex-col items-center justify-center transition-all duration-1000 ease-in-out">
+  
+  <!-- Content Wrapper -->
+  <div class="text-center relative flex flex-col items-center max-w-sm px-6">
+    
+    <!-- Premium Animated Icon / Logo Placeholder -->
+    <div class="relative w-24 h-24 mb-8 flex items-center justify-center">
+      <!-- Outer Elegant Halo Ring -->
+      <div class="absolute inset-0 rounded-full border border-pink-200/60 animate-[spin_6s_linear_infinite]"></div>
+      
+      <!-- Middle Pulsing Aura -->
+      <div class="absolute w-20 h-20 rounded-full border border-amber-700/20 animate-[ping_2s_cubic-bezier(0.16,1,0.3,1)_infinite]"></div>
+      
+      <!-- Core Icon Symbol (Pure CSS Fluid Petal/Drop Shape) -->
+      <div class="w-10 h-10 bg-gradient-to-tr from-pink-600 to-amber-600/80 rounded-full rounded-tr-none rotate-45 animate-[pulse_2.5s_ease-in-out_infinite] shadow-md shadow-pink-100"></div>
+    </div>
+
+    <!-- Luxury Typography with Staggered Character Fade-In Effect -->
+    <h1 class="font-serif font-light text-2xl tracking-[0.25em] text-neutral-800 uppercase mb-2 animate-[pulse_2s_ease-in-out_infinite]">
+      Beauty Spot
+    </h1>
+    <span class="text-[10px] font-sans font-semibold text-amber-800 tracking-[0.4em] uppercase block mb-6">
+      Salon And Spa
+    </span>
+
+    <!-- Ultra-Sleek Minimal Progress Bar -->
+    <div class="w-32 h-[1px] bg-neutral-200 rounded-full overflow-hidden relative">
+      <div class="absolute top-0 bottom-0 left-0 bg-gradient-to-r from-pink-500 to-amber-600 w-full animate-[loaderLine_2s_ease-in-out_infinite] origin-left"></div>
+    </div>
+    
+    <!-- Soft Ambient Subtitle -->
+    <p class="text-[11px] font-light italic text-neutral-400 tracking-wide mt-3 animate-pulse">
+      Preparing your royal treatment...
+    </p>
+  </div>
+</div>
+
+<!-- Custom Keyframe Injector -->
+<style>
+  @keyframes loaderLine {
+    0% {
+      transform: scaleX(0) translateX(0);
+    }
+    40% {
+      transform: scaleX(0.4) translateX(50%);
+    }
+    80% {
+      transform: scaleX(0) translateX(250%);
+    }
+    100% {
+      transform: scaleX(0) translateX(250%);
+    }
+  }
+</style>
+
+    <script src="js/loader.js"></script>
     <script src="js/navbar.js"></script>
 </body>
 
