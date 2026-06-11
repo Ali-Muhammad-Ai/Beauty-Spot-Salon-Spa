@@ -1,18 +1,329 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Beauty Spot Salon & Spa</title>
+    <link rel="shortcut icon" href="media/beauty spot logo.png" type="image/x-icon">
 </head>
-<body>
-    <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGbJ2a1SnIdzHWxuUra5-GaHNujQs_DsxVYdkPlL7FkRAy8zVQ_hCgeNbXp4K3lmMBlLqKfblE76-hiV62-Jtu7bK9vcvFVVHVjyItFD__d5OCfJVX2PqyxNbyGy3wK6MKKZmML=w468-h342-p-k-no"
-        alt="">
-    <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHAABQEdx7Q2UsklvKeb4sLUQW7a4wxx_TyWCOJh1HWKwVpEg9dCSLLOuy1kKcASPnLxa906fqiaMZ79O1EQfaDyHNsfMuikBz57F-vNqCe1qKWBGl8LrCqyo7UQVWdByH5xRF-=w96-h96-p-k-no"
-        alt="">
-    <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHGrVq3QtioN0uFTyfroTAlqu0_c1CcSWKoE6Dg2_FWFxyUSr_0itl61mfcpWF2wbzYvZxHo6D6ef6wzCSWN6Nzrou25OMNtdgqi4fs8LlhoYS3ahpfLDqmF7obmQBJUmIjj-ts=w96-h96-p-k-no"
-        alt="">
-    <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHt5hzWOZZR6uOheX5QHiRbUmXQSoBTjX8QDpbih9CBbJA1J2vl3fqX1QKel_tw_1G67rPTZKhWQ5sLf15LwsF5Cu8SW5y9tQgr36rBypOtJvM1NU0fdRoAa6z1BESzY0R9in3n=s1024-v1"
-        alt="">
+
+<body class="w-full bg-gradient-to-br from-pink-50 via-rose-50 to-amber-50 overflow-x-hidden">
+    <!-- Full-Page Preloader Overlay Container -->
+    <div id="salon-preloader"
+        class="fixed w-screen inset-0 z-[9999] bg-[#faf8f5] flex flex-col items-center justify-center transition-all duration-1000 ease-in-out">
+
+        <!-- Content Wrapper -->
+        <div class="text-center relative flex flex-col items-center max-w-sm px-6">
+
+            <!-- Premium Animated Icon / Logo Placeholder -->
+            <div class="relative w-24 h-24 mb-8 flex items-center justify-center">
+                <!-- Outer Elegant Halo Ring -->
+                <div class="absolute inset-0 rounded-full border border-pink-200/60 animate-[spin_6s_linear_infinite]">
+                </div>
+
+                <!-- Middle Pulsing Aura -->
+                <div
+                    class="absolute w-20 h-20 rounded-full border border-amber-700/20 animate-[ping_2s_cubic-bezier(0.16,1,0.3,1)_infinite]">
+                </div>
+
+                <!-- Core Icon Symbol (Pure CSS Fluid Petal/Drop Shape) -->
+                <div
+                    class="w-10 h-10 bg-gradient-to-tr from-pink-600 to-amber-600/80 rounded-full rounded-tr-none rotate-45 animate-[pulse_2.5s_ease-in-out_infinite] shadow-md shadow-pink-100">
+                </div>
+            </div>
+
+            <!-- Luxury Typography with Staggered Character Fade-In Effect -->
+            <h1
+                class="font-serif font-light text-2xl tracking-[0.25em] text-neutral-800 uppercase mb-2 animate-[pulse_2s_ease-in-out_infinite]">
+                Beauty Spot
+            </h1>
+            <span class="text-[10px] font-sans font-semibold text-amber-800 tracking-[0.4em] uppercase block mb-6">
+                Salon And Spa
+            </span>
+
+            <!-- Ultra-Sleek Minimal Progress Bar -->
+            <div class="w-32 h-[1px] bg-neutral-200 rounded-full overflow-hidden relative">
+                <div
+                    class="absolute top-0 bottom-0 left-0 bg-gradient-to-r from-pink-500 to-amber-600 w-full animate-[loaderLine_2s_ease-in-out_infinite] origin-left">
+                </div>
+            </div>
+
+            <!-- Soft Ambient Subtitle -->
+            <p class="text-[11px] font-light italic text-neutral-400 tracking-wide mt-3 animate-pulse">
+                Preparing your royal treatment...
+            </p>
+        </div>
+    </div>
+    <nav class="fixed top-0 left-0 w-screen z-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div
+                class="mt-4 flex items-center justify-between rounded-full border border-white/30 bg-white/70 backdrop-blur-xl px-6 py-4 shadow-lg">
+
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="media/beauty spot logo.png" alt="Spa Logo" class="w-auto h-14 object-contain" />
+
+                    <span class=" text-xl font-semibold text-pink-700">
+                        Beauty Spot Salon & Spa
+                    </span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-8">
+
+                    <a href="index.html" class="text-gray-700 font-medium hover:text-pink-600 transition">
+                        Home
+                    </a>
+
+                    <a href="services.html" class="text-gray-700 font-medium hover:text-pink-600 transition">
+                        Services
+                    </a>
+                    <a href="team.html" class="text-gray-700 font-medium hover:text-pink-600 transition">
+                        Our Team
+                    </a>
+
+
+                    <a href="contact-us.html"
+                        class="rounded-full bg-gradient-to-r from-pink-500 to-rose-400 px-6 py-3 text-white font-medium shadow-lg shadow-pink-200 transition hover:scale-105">
+                        Contact Us
+                    </a>
+
+                </div>
+
+                <!-- Mobile Toggle -->
+                <button id="menu-btn" class="cursor-pointer md:hidden text-pink-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="hidden mt-3 rounded-3xl border border-white/30 bg-white/80 backdrop-blur-xl shadow-xl overflow-hidden md:hidden">
+
+                <a href="index.html" class="block px-6 py-4 text-gray-700 hover:bg-pink-50">
+                    Home
+                </a>
+
+                <a href="services.html" class="block px-6 py-4 text-gray-700 hover:bg-pink-50">
+                    Services
+                </a>
+                <a href="team.html" class="block px-6 py-4 text-gray-700 hover:bg-pink-50">
+                    Our Team
+                </a>
+
+                <div class="p-4">
+                    <a href="contact-us.html"
+                        class="block w-full text-center rounded-full bg-gradient-to-r from-pink-500 to-rose-400 py-3 text-white font-medium">
+                        Contact Us
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+    <main
+        class="min-h-screen bg-pink-50/60 text-stone-800 selection:bg-pink-200 selection:text-stone-900 antialiased font-sans overflow-x-hidden">
+
+        <!-- Hero Section: What Our Artisans Do -->
+        <section class="relative max-w-7xl mx-auto px-6 pt-32 pb-20 md:pt-40 md:pb-28 text-center">
+            <!-- Soft Ambient Glows -->
+            <div class="absolute inset-0 -z-10 flex items-center justify-center opacity-60">
+                <div
+                    class="h-[350px] w-[500px] bg-gradient-to-tr from-rose-200/40 to-pink-300/20 rounded-full blur-[100px]">
+                </div>
+            </div>
+
+            <!-- Fade Up Animation Wrapper -->
+            <div class="max-w-3xl mx-auto space-y-6 animate-fade-up">
+                <span class="text-xs font-semibold tracking-[0.25em] uppercase text-rose-500/80">The Artists &
+                    Therapists</span>
+                <h1
+                    class="text-4xl sm:text-5xl md:text-6xl font-serif font-normal tracking-wide text-stone-900 leading-tight">
+                    We don’t just alter appearance. <br class="hidden sm:inline">We restore your inner <span
+                        class="italic text-rose-600/90 font-light">harmony</span>.
+                </h1>
+                <p class="text-base sm:text-lg text-stone-600 font-light leading-relaxed max-w-2xl mx-auto">
+                    Our team comprises master colorists, certified aesthetic pioneers, and holistic massage therapists.
+                    Together, we curate bespoke rituals designed to rejuvenate your skin, body, and spirit.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section: Specialized Alchemy (What the Team Does) -->
+        <section class="border-y border-pink-100 bg-white/60 backdrop-blur-md">
+            <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-3 gap-12 md:gap-8">
+
+                <!-- Ritual 1 -->
+                <div class="space-y-4 text-center p-4 group">
+                    <div
+                        class="mx-auto w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center text-rose-500 group-hover:scale-110 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif text-stone-900">Advanced Aesthetics</h3>
+                    <p class="text-stone-600 text-sm font-light leading-relaxed">
+                        Led by clinical specialists, our facial team merges advanced dermal technologies with luxury
+                        botanical care to unlock a radiating, youthful glow.
+                    </p>
+                </div>
+
+                <!-- Ritual 2 -->
+                <div class="space-y-4 text-center p-4 group">
+                    <div
+                        class="mx-auto w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center text-rose-500 group-hover:scale-110 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif text-stone-900">Hair & Couture Styling</h3>
+                    <p class="text-stone-600 text-sm font-light leading-relaxed">
+                        From precise editorial cuts to bespoke balayage treatments, our stylists sculpt hair
+                        architecture tailored distinctly to your facial frame and lifestyle.
+                    </p>
+                </div>
+
+                <!-- Ritual 3 -->
+                <div class="space-y-4 text-center p-4 group">
+                    <div
+                        class="mx-auto w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center text-rose-500 group-hover:scale-110 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M4.5 16.5c-1.5 1.26-2.5 3.19-2.5 5.5h20c0-2.31-1-4.24-2.5-5.5M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif text-stone-900">Holistic Body Therapy</h3>
+                    <p class="text-stone-600 text-sm font-light leading-relaxed">
+                        Deep tissue kneading, hot stones, and traditional aromatherapy seamlessly aligned to erase
+                        physical tension and completely restore spiritual peace.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section: Premium Artisan Roster -->
+        <section class="max-w-7xl mx-auto px-6 py-24 sm:py-32">
+            <div class="text-center mb-20">
+                <span class="text-xs font-semibold tracking-[0.2em] uppercase text-stone-400">Master Craftsmen</span>
+                <h2 class="text-3xl md:text-4xl font-serif text-stone-900 mt-2">Meet Your Wellness Guides</h2>
+            </div>
+
+            <!-- Team Grid Layout -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8">
+
+                <!-- Artisan 1 -->
+                <div
+                    class="group relative bg-white/40 p-4 rounded-3xl border border-pink-100/50 hover:shadow-xl hover:shadow-rose-100/50 transition-all duration-500">
+                    <div class="aspect-[4/5] w-full overflow-hidden rounded-2xl bg-stone-100 relative">
+                        <!-- Elegant placeholder representing a high-end salon headshot -->
+                        <svg class="w-full h-full text-pink-200 object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700"
+                            viewBox="0 0 100 125" fill="currentColor">
+                            <rect width="100" height="125" fill="#fdf2f8" />
+                            <circle cx="50" cy="45" r="18" fill="#fbcfe8" />
+                            <path d="M20 115c0-18 12-30 30-30s30 12 30 30z" fill="#fbcfe8" />
+                        </svg>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-stone-950/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                    </div>
+                    <div class="mt-6 text-center space-y-1">
+                        <span class="text-[10px] tracking-widest font-mono text-rose-500 uppercase font-semibold">Master
+                            Colorist</span>
+                        <h4 class="text-xl font-serif text-stone-900">Charlotte Vane</h4>
+                        <p class="text-xs text-stone-500 font-light max-w-xs mx-auto px-4">
+                            12+ years defining luxury tones. Expert in French Balayage and hair restructuring rituals.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Artisan 2 -->
+                <div
+                    class="group relative bg-white/40 p-4 rounded-3xl border border-pink-100/50 hover:shadow-xl hover:shadow-rose-100/50 transition-all duration-500">
+                    <div class="aspect-[4/5] w-full overflow-hidden rounded-2xl bg-stone-100 relative">
+                        <svg class="w-full h-full text-pink-200 object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700"
+                            viewBox="0 0 100 125" fill="currentColor">
+                            <rect width="100" height="125" fill="#fdf2f8" />
+                            <circle cx="50" cy="45" r="18" fill="#fbcfe8" />
+                            <path d="M20 115c0-18 12-30 30-30s30 12 30 30z" fill="#fbcfe8" />
+                        </svg>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-stone-950/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                    </div>
+                    <div class="mt-6 text-center space-y-1">
+                        <span class="text-[10px] tracking-widest font-mono text-rose-500 uppercase font-semibold">Lead
+                            Dermal Aesthetician</span>
+                        <h4 class="text-xl font-serif text-stone-900">Dr. Amara Thorne</h4>
+                        <p class="text-xs text-stone-500 font-light max-w-xs mx-auto px-4">
+                            Specializes in customized micro-current facials, advanced peels, and cellular regeneration.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Artisan 3 -->
+                <div
+                    class="group relative bg-white/40 p-4 rounded-3xl border border-pink-100/50 hover:shadow-xl hover:shadow-rose-100/50 transition-all duration-500">
+                    <div class="aspect-[4/5] w-full overflow-hidden rounded-2xl bg-stone-100 relative">
+                        <svg class="w-full h-full text-pink-200 object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700"
+                            viewBox="0 0 100 125" fill="currentColor">
+                            <rect width="100" height="125" fill="#fdf2f8" />
+                            <circle cx="50" cy="45" r="18" fill="#fbcfe8" />
+                            <path d="M20 115c0-18 12-30 30-30s30 12 30 30z" fill="#fbcfe8" />
+                        </svg>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-stone-950/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                    </div>
+                    <div class="mt-6 text-center space-y-1">
+                        <span
+                            class="text-[10px] tracking-widest font-mono text-rose-500 uppercase font-semibold">Massage
+                            Alchemist</span>
+                        <h4 class="text-xl font-serif text-stone-900">Sora Takahashi</h4>
+                        <p class="text-xs text-stone-500 font-light max-w-xs mx-auto px-4">
+                            Certified in ancient Zen styles and Deep Tissue structural massage to melt chronic stress
+                            away.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Premium Call to Action Section -->
+        <section class="max-w-5xl mx-auto px-6 pb-32">
+            <div
+                class="relative rounded-3xl overflow-hidden bg-gradient-to-b from-white to-pink-100/70 p-8 md:p-16 text-center space-y-6 border border-pink-200/50 shadow-lg shadow-pink-100/40">
+                <div class="max-w-xl mx-auto space-y-3">
+                    <h3 class="text-2xl md:text-3xl font-serif text-stone-900">Ready for a total reset?</h3>
+                    <p class="text-stone-600 text-sm font-light leading-relaxed">
+                        Let our artisans curate an exceptional, personalized transformation journey for you today.
+                    </p>
+                </div>
+                <div class="pt-2">
+                    <button
+                        class="inline-flex items-center justify-center px-8 py-3.5 bg-stone-900 hover:bg-stone-800 text-white text-xs tracking-widest font-medium uppercase rounded-full transition-all duration-300 shadow-md transform hover:-translate-y-0.5">
+                        Reserve An Appointment
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/loader.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
+
 </html>
