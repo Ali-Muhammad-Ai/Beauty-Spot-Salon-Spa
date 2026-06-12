@@ -1,4 +1,4 @@
-html { 
+html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -76,53 +76,52 @@ html {
 
 /* Initial hidden state: pushed down and invisible */
 .scroll-reveal {
-  opacity: 0;
-  will-change: transform, opacity;
-  transform: translateY(40px);
-  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), 
-              transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: transform, opacity;
+    opacity: 0;
+    will-change: transform, opacity;
+    transform: translateY(40px);
+    transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-float,
-  .animate-float-delayed {
-    animation: none;
-  }
 
-  .scroll-reveal {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
+    .animate-float,
+    .animate-float-delayed {
+        animation: none;
+    }
+
+    .scroll-reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
 }
 
 /* Active visible state: snapped back to original position */
 .scroll-reveal.active {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /*  Custom Keyframe Injector  */
 
 @keyframes loaderLine {
-  0% {
-    transform: scaleX(0) translateX(0);
-  }
-  40% {
-    transform: scaleX(0.4) translateX(50%);
-  }
-  80% {
-    transform: scaleX(0) translateX(100%); /* Changed from 250% */
-  }
-  100% {
-    transform: scaleX(0) translateX(100%); /* Changed from 250% */
-  }
+    0% {
+        transform: scaleX(0) translateX(0);
+    }
+
+    40% {
+        transform: scaleX(0.4) translateX(50%);
+    }
+
+    80% {
+        transform: scaleX(0) translateX(100%);
+        /* Changed from 250% */
+    }
+
+    100% {
+        transform: scaleX(0) translateX(100%);
+        /* Changed from 250% */
+    }
 }
-
-
-
-
-
-
-/* =============== Testimonial =============== */
